@@ -1,0 +1,77 @@
+.contacts-us {
+    background: var(--color-background);
+    padding: 62px 82px;
+}
+
+.layout-2-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.contact-us_line {
+    margin-bottom: 19px;
+}  
+
+textarea {
+    resize: none;
+    width: 99%;
+    height: 160px;
+    border: none;
+
+}
+
+.contact-us_line> input {
+    background-color: var(--color-light);
+    border: none;
+    padding: 10px 21px;
+    border-radius: 5px;
+    
+}
+
+.contact-us_line> input:focus {
+    border: 1px solid var(--color-brand);
+    outline: none;
+}
+
+textarea:focus {
+    border: 1px solid var(--color-brand);
+    outline: none;
+}
+
+.contact-us_button {
+    min-width: 117px;
+}
+
+.mail, .tell {
+    font-size: 25px;
+    line-height: 26px;
+    text-decoration: none;
+    color: var( --color-text);
+}
+
+.cont_tell {
+    margin-bottom: 19px;
+    
+}
+
+.cont_text {
+    margin-bottom: 33px;
+}
+
+.ico_phone {
+    
+    background-image: url(../img/strategies/phone.svg);
+}
+
+.ico_letter {
+    background-image: url(../img/strategies/mail.svg);
+}
+
+.ico {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: -15% ;
+}

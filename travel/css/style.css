@@ -1,0 +1,758 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* magra-regular - latin */
+@font-face {
+	font-family: 'Magra';
+	font-style: normal;
+	font-weight: 400;
+	src: local(''),
+		url('../fonts/magra-v14-latin-regular.woff2') format('woff2'),
+		/* Chrome 26+, Opera 23+, Firefox 39+ */
+		url('../fonts/magra-v14-latin-regular.woff') format('woff');
+	/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* aleo-regular - latin */
+@font-face {
+	font-family: 'Aleo';
+	font-style: normal;
+	font-weight: 400;
+	src: local(''),
+		url('../fonts/aleo-v11-latin-regular.woff2') format('woff2'),
+		/* Chrome 26+, Opera 23+, Firefox 39+ */
+		url('../fonts/aleo-v11-latin-regular.woff') format('woff');
+	/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* aleo-italic - latin */
+@font-face {
+	font-family: 'Aleo';
+	font-style: italic;
+	font-weight: 400;
+	src: local(''),
+		url('../fonts/aleo-v11-latin-italic.woff2') format('woff2'),
+		/* Chrome 26+, Opera 23+, Firefox 39+ */
+		url('../fonts/aleo-v11-latin-italic.woff') format('woff');
+	/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* aleo-700 - latin */
+@font-face {
+	font-family: 'Aleo';
+	font-style: normal;
+	font-weight: 700;
+	src: local(''),
+		url('../fonts/aleo-v11-latin-700.woff2') format('woff2'),
+		/* Chrome 26+, Opera 23+, Firefox 39+ */
+		url('../fonts/aleo-v11-latin-700.woff') format('woff');
+	/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* aleo-700italic - latin */
+@font-face {
+	font-family: 'Aleo';
+	font-style: italic;
+	font-weight: 700;
+	src: local(''),
+		url('../fonts/aleo-v11-latin-700italic.woff2') format('woff2'),
+		/* Chrome 26+, Opera 23+, Firefox 39+ */
+		url('../fonts/aleo-v11-latin-700italic.woff') format('woff');
+	/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* red-hat-text-regular - latin */
+@font-face {
+	font-family: 'Red Hat Text';
+	font-style: normal;
+	font-weight: 400;
+	src: local(''),
+		url('../fonts/red-hat-text-v13-latin-regular.woff2') format('woff2'),
+		/* Chrome 26+, Opera 23+, Firefox 39+ */
+		url('../fonts/red-hat-text-v13-latin-regular.woff') format('woff');
+	/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* red-hat-text-500 - latin */
+@font-face {
+	font-family: 'Red Hat Text';
+	font-style: normal;
+	font-weight: 500;
+	src: local(''),
+		url('../fonts/red-hat-text-v13-latin-500.woff2') format('woff2'),
+		/* Chrome 26+, Opera 23+, Firefox 39+ */
+		url('../fonts/red-hat-text-v13-latin-500.woff') format('woff');
+	/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+body {
+	font-family: 'Lato';
+	font-style: normal;
+	font-size: 16px;
+	line-height: 1.2;
+	font-weight: normal;
+	color: #102746;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+.wrapper {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+/* Header styles start */
+
+.header {
+
+	background-color: #F2785C;
+	/* position: fixed; */
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.header__wrapper {
+	height: 90px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 120px;
+}
+
+.header__logo {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.header__logo-text {
+	font-family: 'Magra';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 39px;
+	color: #FFFFFF;
+	text-decoration: none;
+	padding-left: 6px;
+}
+
+.header__list {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: 38px;
+}
+
+.header__item {
+	margin-right: 42px;
+}
+
+.header__item:last-child {
+	margin-right: 0;
+}
+
+.header__link {
+
+	font-family: 'Red Hat Text';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 21px;
+	color: white;
+	text-decoration: none;
+}
+
+.header__link:hover,
+.header__link:focus,
+.header__link:active {
+	opacity: .75;
+	
+}
+
+.login__submit {
+	background: #0D606F;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+	border-radius: 10px;
+	font-family: 'Red Hat Text';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 21px;
+	color: #FFFFFF;
+	padding: 10px 30px;
+	border: none;
+}
+
+.login__submit:hover,
+.login__submit:focus,
+.login__submit:active {
+	background: #324346;
+}
+/* Header styles end */
+
+
+/* Intro styles start */
+
+.intro {
+	padding-top: 32px;
+	max-width: 1440px;
+	margin: 0 auto;
+	height: 765px;
+	background: url(../img/garrett-parker-DlkF4-dbCOU-unsplash\ 1.jpg) no-repeat center;
+	background-size: cover;
+	margin-bottom: 80px;
+}
+
+.intro__wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 0px 120px;
+}
+
+.intro__title {
+	max-width: 892px;
+	font-family: 'Aleo';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 80px;
+	line-height: 96px;
+	color: #FFFFFF;
+	margin-bottom: 32px;
+}
+
+.intro__subtitle {
+	font-family: 'Aleo';
+	font-style: italic;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+	color: #FFFFFF;
+	margin-bottom: 46px;
+}
+
+.search-form__info {
+	display: flex;
+	flex-wrap: wrap;
+	background: rgba(255, 255, 255, 0.7);
+	border-radius: 16px;
+	justify-content: space-between;
+	align-items: center;
+	height: 95px;
+	max-width: 892px;
+
+}
+
+.search-form__field {
+	width: 560px;
+	margin-right: 45px;
+	margin-left: 41px;
+	border: 0;
+	background: transparent;
+	font-family: 'Aleo';
+	font-style: italic;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 29px;
+	color: #FFFFFF;
+}
+
+.search-form__submit {
+	padding: 10px 32px;
+	font-family: 'Red Hat Text';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 32px;
+	color: #FFFFFF;
+	background: #0D606F;
+	box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+	border-radius: 10px;
+	border: 0;
+	margin-right: 18px;
+}
+
+.search-form__field::placeholder {
+	font-family: 'Aleo';
+	font-style: italic;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 29px;
+	color: #F2785C;
+}
+
+.search-form__submit:hover,
+.search-form__submit:focus,
+.search-form__submit:active {
+	background: #324346;
+}
+
+/* Intro styles end */
+
+/* Steps styles start */
+
+
+.steps {
+	margin-bottom: 97px;
+}
+
+.steps__wrap {
+	max-width: 1177px;
+
+	margin: 0 auto;
+
+}
+
+.section-title {
+	text-align: center;
+	font-family: 'Red Hat Text';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 53px;
+	color: #F2785C;
+}
+
+.steps__title {
+	width: 100%;
+	margin-bottom: 40px;
+
+}
+
+.steps__cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+}
+
+.steps__card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.steps__card2 {
+	margin-left: 68px;
+}
+
+.steps__card-pic {
+	max-width: 100px;
+	margin-bottom: 30px;
+}
+
+.steps__card-title {
+	font-family: 'Aleo';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	color: #0D606F;
+
+}
+
+/* Steps styles end */
+
+
+/* destinations styles start */
+
+.destinations {
+	margin-bottom: 80px;
+}
+
+.destinations__caption {
+	max-width: 1177px;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 46px;
+}
+
+
+
+.destinations__wrapper {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.carusel__wrapper {
+	max-width: 1440px;
+	overflow: hidden;
+}
+
+.carusel {
+	display: flex;
+	justify-content: center;
+	gap: 60px;
+	margin-bottom: 24px;
+	/* position: relative;
+    transform: translateX(0);
+    transition: 0.5s all linear; */
+}
+
+.destinations__card {
+	position: relative;
+}
+
+.destinations__card-pic {
+	border-radius: 16px;
+}
+
+.destinations__card-title {
+	position: absolute;
+	bottom: 40px;
+	left: 15px;
+	font-family: 'Red Hat Text';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 42px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+}
+
+.scroll {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 40px;
+}
+
+.scroll-1 {
+	width: 20px;
+	height: 20px;
+	background: rgba(242, 120, 92, 0.5);
+	border-radius: 50%;
+}
+
+.scroll-2 {
+	width: 20px;
+	height: 20px;
+	background: #F2785C;
+	border-radius: 50%;
+	margin-left: 10px;
+}
+
+.scroll-3 {
+	width: 20px;
+	height: 20px;
+	background: rgba(242, 120, 92, 0.5);
+	border-radius: 50%;
+	margin-left: 10px;
+}
+
+.more {
+	display: flex;
+	width: 228px;
+	height: 59px;
+	margin-left: 42%;
+	transition: .3s;
+	background: #0D606F;
+	box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+	border-radius: 10px;
+
+}
+
+.more-submit {
+	display: inline-block;
+	padding-left: 50px;
+	margin-left: 31px;
+	font-family: 'Red Hat Text';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 32px;
+	color: #FFFFFF;
+	background: url(../img/svg/bi_arrow-right.svg) no-repeat left center;
+	text-decoration: none;
+	border: none;
+}
+
+.more:hover,
+.more:focus,
+.more:active {
+background: #324346;
+}
+
+
+/* destinations styles end */
+
+
+/* stories styles start */
+
+
+
+.footer {
+	width: 100%;
+	min-height: 1424px;
+	max-width: 1440px;
+	margin: 0 auto;
+	background: url(../img/Rectangle_33.jpg) no-repeat center;
+	background-position: bottom;
+}
+
+.stories {
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.stories__wrapper {
+	min-height: 1363px;
+	background: rgba(255, 255, 255, 0.7);
+
+}
+
+.stories__title {
+	margin-bottom: 40px;
+}
+
+.stories__cards {
+	display: flex;
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.story__card-1 {
+	padding-top: 40px;
+	display: flex;
+	margin-bottom: 26px;
+}
+
+.story__card-2 {
+	display: flex;
+	margin-bottom: 26px;
+}
+
+.story__card-3 {
+	display: flex;
+	margin-bottom: 26px;
+}
+
+.story__card-4 {
+	display: flex;
+	
+}
+
+
+.story-card-pic{
+	filter: drop-shadow(0px 4px 4px #0D606F);
+	border-radius: 16px;
+}
+
+.card__info{
+	width: 69%;
+	margin-left: 40px;
+}
+
+.card__title{
+	font-family: 'Aleo';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 35px;
+	line-height: 42px;
+	color: #0D606F;
+	margin-bottom: 24px;
+}
+.card__description{
+	font-family: 'Aleo';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	color: #0D606F;
+}
+
+.card__link{
+	font-family: 'Aleo';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+	text-decoration-line: underline;
+	color: #0D606F;
+}
+
+.see__more{
+	display: flex;
+	width: 228px;
+	height: 59px;
+	margin-left: 42%;
+	transition: .3s;
+	background: #0D606F;
+	box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+	border-radius: 10px;
+	margin-top: 40px;
+}
+
+.see__more:hover,
+.see__more:focus,
+.see__more:active {
+background: #324346;
+}
+
+
+.footer__wrapper {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.my__icon__item {
+    display: flex;
+    list-style: none;
+    
+   
+}
+
+.github_logo {
+	width: 38px;
+	height: 38px;
+	margin-right: 10px;
+}
+
+.rsschool_logo {
+	width: 100%;
+	height: 38px;
+}
+
+.description__footer {
+	font-family: 'Red Hat Text';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 21px;
+	color: #FFFFFF;
+	padding-top: 5.5px;
+	padding-left: 0px;
+}
+
+.icons__footer {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding-top: 14px;
+}
+
+.icon-1,.icon-2 {
+	margin-right: 20px;
+
+}
+
+.ico:hover, 
+.ico:focus, 
+.ico:active {
+    opacity: .75;
+}
+
+/* stories styles end */

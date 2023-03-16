@@ -1,0 +1,277 @@
+.promo_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.promo {
+    padding: 30px;
+}
+.promo_content {
+    padding-right:  65px;
+    width: 486px;
+}
+
+.promo_buttons>* {
+    margin-right: 44px;
+}
+
+.promo-title {
+    margin: 0 0 30px 0;
+}
+
+.promo-text {
+    margin-bottom: 45px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+}
+
+.layout-4-column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.tools_title{
+    max-width: 462px;
+    margin: auto;
+    margin-bottom: 70px;
+}
+
+.tool {
+    margin: 0;
+    width: 21%;
+}
+
+.icon-square {
+    
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 19px;
+   align-items: center;
+   justify-content: center;
+}
+
+.icon-square_lilium {
+    background-color: var(--color-violet);
+}
+
+
+.icon-square_orange {
+    background-color: var(--color-yellow);
+}
+
+
+.icon-square_red {
+    background-color: var(--color-red);
+}
+
+.icon-square_blue {
+    background-color: var(--color-blue);
+}
+
+.ico_arrow {
+    
+    width: 12px;
+    height: 17px;
+    background-image: url(../img/strategies/arrow1.svg);
+}
+
+.tools_wrapper {
+    padding-bottom: 90px;
+    background-image: url(../img/strategies/Bg.png);
+    background-position: center bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.tools-button {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.tool_title {
+    margin: 0 0 26px;
+}
+
+.tool_icon {
+    margin-bottom: 30px;
+}
+
+.layout {
+    background: url(../img/;ayout.svg);
+}
+
+.layout-3-column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+
+
+.strategies {
+    margin-top: 30px 0 0 96px;
+}
+
+.strategies_title {
+    margin-bottom: 14px;
+}
+
+.strategies_description {
+    margin-bottom: 24px;
+}
+
+.strategy_image {
+    width: 100%;
+}
+
+.strategy {
+    width:  30%;
+    margin-bottom: 30px;
+    
+}
+
+.strategy2 {
+    width:  65%;
+    margin-bottom: 30px;
+}
+
+.block-shadowed {
+    border-radius: 8px;
+    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.05));
+}
+
+.strategies_tags {
+    margin-bottom: 31px;
+}
+
+
+.strategies_tag {
+    margin: 0 0 26px 33px;
+}
+
+.tags {
+    display: flex;
+}
+
+.tag  {
+    margin-right: 7px;
+    padding: 0 14px;
+    border: 1px solid #D7D7D7;
+    border-radius: 90px;
+    font-size: 1.3rem;
+    line-height: 2.8ren;
+}
+
+.tag_selected {
+    background-color: var(--color-brand);
+}
+
+.tag_colored {
+    background: #F5F5F5;
+}
+
+.block-shadowed {
+    border-radius: 8px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+
+
+
+
+
+
+.about {
+    margin-bottom: 45px;
+}
+
+.aboutus {
+    margin-bottom: 101px;
+}
+
+.employer {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 345px;
+    height: 141px;
+}
+
+.employer_content {
+    margin-top: 35px;
+    margin-left: 35px;
+}
+
+.employer_content>a {
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+}
+
+.employer_title {
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+}
+
+.avator {
+    position: absolute;
+    left: 279px;
+    top: 20px;
+    background-size: cover;
+   
+    width: 130px;
+    height: 130px;
+}
+.avator_1 {
+    background-image: url(../img/strategies/Avator1.svg);
+}
+
+.avator_2 {
+    background-image: url(../img/strategies/Avator2.svg);
+}
+
+.avator_3 {
+    background-image: url(../img/strategies/Avator3.svg);
+}
+
+.layout-2-columns {
+    display: flex;
+    flex-wrap: wrap;
+  
+}
+
+.contact-us_content, .contact-us_form {
+    width:  45%;
+}
+
+
+
+
+
+
+.layout-4-column> a {
+    margin-top: 61px;
+}
+
+.footer-nav_links> li {
+    cursor: pointer;
+    list-style: none;
+    font-size: 16px;
+    line-height: 35px;
+    transition: all 0.3s;
+    
+}
+
+.footer-nav_links> li > a {
+    text-decoration: none;
+}
+
+.footer-nav_links>li> a:hover {
+    
+    color: var(--color-brand);
+}
